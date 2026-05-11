@@ -1043,6 +1043,8 @@ namespace IoTClient.Clients.Modbus
                     else
                     {
                         result.SetErrInfo(tempResult);
+                        //如果存在异常，按正确逻辑应该是直接返回失败，不继续往下读取了。因为可能存在通信异常，如果继续往下读，可能会导致更多的异常日志产生，甚至造成系统卡顿等问题。
+                        return result.EndTime();
                     }
                 }
             }
