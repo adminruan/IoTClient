@@ -1220,8 +1220,7 @@
             <param name="ipAndPoint"></param>
             <param name="timeout">超时时间（毫秒）</param>
             <param name="format">大小端设置</param>
-            <param name="plcAddresses">PLC地址</param>
-            <param name="plcAddresses">PLC地址</param>
+            <param name="plcAddresses">PLC地址</param>        
         </member>
         <member name="M:IoTClient.Clients.Modbus.ModbusTcpClient.#ctor(System.String,System.Int32,System.Int32,IoTClient.Enums.EndianFormat,System.Boolean)">
             <summary>
